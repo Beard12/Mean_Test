@@ -1,0 +1,8 @@
+<h2>Your Name:</h2>
+<form ng-submit="login()">
+	<input type="text" ng-model="user.name">
+	<input type="submit" value="Login">
+</form>
+<div ng-if="errors">
+	<p ng-repeat="message in messages">{{message}}</p>
+</div>
